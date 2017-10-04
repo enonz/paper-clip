@@ -11,6 +11,7 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', [
+	'as' =>	'general.landing-page.index',
+	'uses'	=>	'General\LandingPageController@index'
+]);
