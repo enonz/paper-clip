@@ -7,5 +7,7 @@ use App\Http\Controllers\Controller;
 
 class AboutUsController extends Controller
 {
-    //
+    public function index(){
+    	return view('admin.master.about_us.index');
+    }
 }
